@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modal</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="grid">
+      <article>
+        <img
+          src="https://th.bing.com/th/id/OIP.8VFho4Gu81trOCQZeHZ9KAHaFj?pid=ImgDet&rs=1"
+          alt="Sample photo"
+          height="500px"
+        />
+        <div class="text">
+          <button data-modal-target="#modal" class="button" data-url="https://www.youtube.com/embed/uUCpopjPZdI">watch video</button>
+          <div class="modal" id="modal">
+            <button data-close-button class="close-button">X</button>
+            <div class="modal-body">
+              <iframe
+                style="height: 300px; width: 400px"
+                src="https://www.youtube.com/embed/uUCpopjPZdI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <img
+          src="https://th.bing.com/th/id/OIP.8VFho4Gu81trOCQZeHZ9KAHaFj?pid=ImgDet&rs=1"
+          alt="Sample photo"
+          height="500px"
+        />
+        <div class="text">
+          <button data-modal-target="#modal" class="button" data-url="https://www.youtube.com/watch?v=MBaw_6cPmAw&ab_channel=WebDevSimplified">watch video</button>
+          <div class="modal" id="modal">
+            <button data-close-button class="close-button">X</button>
+            <div class="modal-body">
+              <iframe
+                style="height: 300px; width: 400px"
+                src="https://www.youtube.com/watch?v=MBaw_6cPmAw&ab_channel=WebDevSimplified"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <img
+          src="https://th.bing.com/th/id/OIP.8VFho4Gu81trOCQZeHZ9KAHaFj?pid=ImgDet&rs=1"
+          alt="Sample photo"
+          height="500px"
+        />
+        <div class="text">
+          <button data-modal-target="#modal" class="button">watch video</button>
+          <div class="modal" id="modal">
+            <button data-close-button class="close-button">X</button>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              officia ipsam sequi nesciunt autem officiis sapiente laborum,
+              similique minima molestiae ad, illo labore odit culpa quo
+              consequatur consequuntur quod explicabo.
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <div id="overlay"></div>
+  </body>
+</html>
